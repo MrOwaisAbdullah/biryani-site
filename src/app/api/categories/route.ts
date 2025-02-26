@@ -1,33 +1,61 @@
 import { NextResponse } from 'next/server';
 
-const categoriesData = [
-  {
-    "_id": "b5710116-09af-4d0e-aa9a-dcd02fe919a9",
-    "title": "Desk Chair",
-    "description": "Collection of modern desk chairs for your workspace",
-    "imageUrl": "https://example.com/categories/desk-chair.jpg"
-  },
-  {
-    "_id": "26fd7176-3c4d-40fc-a73a-3b85a9b5e15f",
-    "title": "Wing Chair",
-    "description": "Elegant and comfortable wing chairs for your living room",
-    "imageUrl": "https://example.com/categories/wing-chair.jpg"
-  },
-  {
-    "_id": "407a8583-6203-4f61-becf-8e8b4c5461b6",
-    "title": "Wooden Chair",
-    "description": "Traditional and rustic wooden chairs",
-    "imageUrl": "https://example.com/categories/wooden-chair.jpg"
-  }
-];
+// Sample categories data - replace with your actual data source or database query
+const categories = [
+    {
+      _id: 'cat_biryani',
+      title: 'Tikka Biryani',
+      description: 'Flavorful rice dish made with aromatic spices and meat/vegetables',
+      imageUrl: '/images/categories/biryani.jpg'
+    },
+    {
+      _id: 'cat_pulao',
+      title: 'Pulao',
+      description: 'Fragrant rice with meat cooked in special Hyderabadi style',
+      imageUrl: '/images/categories/pulao.jpg'
+    },
+    {
+      _id: 'cat_extras',
+      title: 'Extras',
+      description: 'Additional side items to complement your meal',
+      imageUrl: '/images/categories/extras.jpg'
+    },
+    {
+      _id: 'cat_drinks',
+      title: 'Cold Drinks',
+      description: 'Refreshing beverages to enjoy with your meal',
+      imageUrl: '/images/categories/drinks.jpg'
+    },
+    {
+      _id: 'cat_desserts',
+      title: 'Desserts',
+      description: 'Sweet treats to finish your meal',
+      imageUrl: '/images/categories/desserts.jpg'
+    },
+    {
+      _id: 'cat_sides',
+      title: 'Sides',
+      description: 'Side dishes including Raita and Salad',
+      imageUrl: '/images/categories/sides.jpg'
+    },
+    {
+      _id: 'cat_deals',
+      title: 'Deals',
+      description: 'Special value meal combinations',
+      imageUrl: '/images/categories/deals.jpg'
+    }
+  ];
 
 export async function GET() {
   try {
-    return NextResponse.json(categoriesData, { status: 200 });
+    // Here you would typically fetch categories from your database
+    // For demonstration, we're using the sample data above
+    
+    return NextResponse.json(categories);
   } catch (error) {
     console.error('Error fetching categories:', error);
     return NextResponse.json(
-      { error: 'Failed to fetch categories data' },
+      { error: 'Failed to fetch categories' },
       { status: 500 }
     );
   }
