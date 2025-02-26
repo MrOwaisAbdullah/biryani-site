@@ -8,7 +8,7 @@ const products = [
       title: 'Tikka Biryani 250gm',
       description: 'Delicious tikka biryani, 250gm serving',
       price: 140,
-      imageUrl: '/images/products/tikka_biryani4.jpg',
+      imageUrl: '/images/products/tikka_biryani4.png',
       tags: ['biryani', 'tikka', 'rice'],
       category: { _id: 'cat_biryani', title: 'Tikka Biryani' }
     },
@@ -17,7 +17,7 @@ const products = [
         title: 'Tikka Biryani 750gm',
         description: 'Delicious tikka biryani, 750gm serving',
         price: 410,
-        imageUrl: '/images/products/tikka_biryani2.jpg',
+        imageUrl: '/images/products/tikka_biryani2.png',
         tags: ['biryani', 'tikka', 'rice'],
         category: { _id: 'cat_biryani', title: 'Tikka Biryani' }
       },
@@ -26,7 +26,7 @@ const products = [
       title: 'Tikka Biryani Half Kg',
       description: 'Delicious tikka biryani, half kg serving',
       price: 280,
-      imageUrl: '/images/products/tikka_biryani3.jpg',
+      imageUrl: '/images/products/tikka_biryani3.png',
       tags: ['biryani', 'tikka', 'rice'],
       category: { _id: 'cat_biryani', title: 'Tikka Biryani' }
     },
@@ -35,7 +35,7 @@ const products = [
       title: 'Tikka Biryani 1 Kg',
       description: 'Delicious tikka biryani, 1kg serving',
       price: 560,
-      imageUrl: '/images/products/tikka_biryani1.jpg',
+      imageUrl: '/images/products/tikka_biryani1.png',
       tags: ['biryani', 'tikka', 'rice', 'family size'],
       category: { _id: 'cat_biryani', title: 'Tikka Biryani' }
     },
@@ -44,7 +44,7 @@ const products = [
       title: 'Tikka Biryani Sada 250gm',
       description: 'Simple tikka biryani without extra spices, 250gm serving',
       price: 100,
-      imageUrl: '/images/products/tikka_biryani_sada4.jpg',
+      imageUrl: '/images/products/tikka_biryani_sada4.png',
       tags: ['biryani', 'tikka', 'rice', 'sada', 'mild'],
       category: { _id: 'cat_biryani', title: 'Tikka Biryani' }
     },
@@ -53,7 +53,7 @@ const products = [
       title: 'Tikka Biryani Sada 1 Kg',
       description: 'Simple tikka biryani without extra spices, 1kg serving',
       price: 400,
-      imageUrl: '/images/products/tikka_biryani_sada1.jpg',
+      imageUrl: '/images/products/tikka_biryani_sada1.png',
       tags: ['biryani', 'tikka', 'rice', 'sada', 'mild', 'family size'],
       category: { _id: 'cat_biryani', title: 'Tikka Biryani' }
     },
@@ -64,7 +64,7 @@ const products = [
       title: 'Beef Pulao 1 Kg',
       description: 'Flavorful beef pulao, 1kg serving',
       price: 620,
-      imageUrl: '/images/products/beef_pulao1.jpg',
+      imageUrl: '/images/products/beef_pulao1.png',
       tags: ['pulao', 'beef', 'rice', 'family size'],
       category: { _id: 'cat_pulao', title: 'Pulao' }
     },
@@ -73,7 +73,7 @@ const products = [
       title: 'Beef Pulao 750Gm',
       description: 'Flavorful beef pulao, 750gm serving',
       price: 480,
-      imageUrl: '/images/products/beef_pulao2.jpg',
+      imageUrl: '/images/products/beef_pulao2.png',
       tags: ['pulao', 'beef', 'rice'],
       category: { _id: 'cat_pulao', title: 'Pulao' }
     },
@@ -82,7 +82,7 @@ const products = [
       title: 'Beef Pulao Half kg',
       description: 'Flavorful beef pulao, half kg serving',
       price: 320,
-      imageUrl: '/images/products/beef_pulao3.jpg',
+      imageUrl: '/images/products/beef_pulao3.png',
       tags: ['pulao', 'beef', 'rice'],
       category: { _id: 'cat_pulao', title: 'Pulao' }
     },
@@ -91,7 +91,7 @@ const products = [
       title: 'Beef Pulao 250gm',
       description: 'Flavorful beef pulao, 250gm serving',
       price: 160,
-      imageUrl: '/images/products/beef_pulao4.jpg',
+      imageUrl: '/images/products/beef_pulao4.png',
       tags: ['pulao', 'beef', 'rice'],
       category: { _id: 'cat_pulao', title: 'Pulao' }
     },
@@ -100,7 +100,7 @@ const products = [
       title: 'Sada Pulao 1 Kg',
       description: 'Simple plain rice pulao, 1kg serving',
       price: 400,
-      imageUrl: '/images/products/sada_pulao1.jpg',
+      imageUrl: '/images/products/sada_pulao1.png',
       tags: ['pulao', 'plain', 'rice', 'sada', 'family size'],
       category: { _id: 'cat_pulao', title: 'Pulao' }
     },
@@ -109,7 +109,7 @@ const products = [
       title: 'Sada Pulao 750Gm',
       description: 'Simple plain rice pulao, 750gm serving',
       price: 300,
-      imageUrl: '/images/products/beef_pulao2.jpg',
+      imageUrl: '/images/products/beef_pulao2.png',
       tags: ['pulao', 'plain', 'rice', 'sada'],
       category: { _id: 'cat_pulao', title: 'Pulao' }
     },
@@ -118,7 +118,7 @@ const products = [
       title: 'Sada Pulao Half Kg',
       description: 'Simple plain rice pulao, half kg serving',
       price: 200,
-      imageUrl: '/images/products/sada_pulao3.jpg',
+      imageUrl: '/images/products/sada_pulao3.png',
       tags: ['pulao', 'plain', 'rice', 'sada'],
       category: { _id: 'cat_pulao', title: 'Pulao' }
     },
@@ -127,7 +127,7 @@ const products = [
       title: 'Sada Pulao 250gm',
       description: 'Simple plain rice pulao, 250gm serving',
       price: 100,
-      imageUrl: '/images/products/sada_pulao4.jpg',
+      imageUrl: '/images/products/sada_pulao4.png',
       tags: ['pulao', 'plain', 'rice', 'sada'],
       category: { _id: 'cat_pulao', title: 'Pulao' }
     },
@@ -138,7 +138,7 @@ const products = [
       title: 'Badami Kheer',
       description: 'Sweet almond rice pudding',
       price: 120,
-      imageUrl: '/images/products/badami_kheer.jpg',
+      imageUrl: '/images/products/badami_kheer.png',
       tags: ['dessert', 'sweet', 'kheer', 'almond'],
       category: { _id: 'cat_desserts', title: 'Desserts' }
     },
@@ -147,7 +147,7 @@ const products = [
       title: 'Extra Fried Onion',
       description: 'Crispy fried onions to top your biryani or pulao',
       price: 30,
-      imageUrl: '/images/products/fried_onion.jpg',
+      imageUrl: '/images/products/fried_onion.png',
       tags: ['extras', 'fried', 'onion', 'topping'],
       category: { _id: 'cat_extras', title: 'Extras' }
     },
@@ -156,7 +156,7 @@ const products = [
       title: 'Extra Chicken Tikka Piece',
       description: 'Additional marinated and grilled chicken tikka piece',
       price: 50, // Estimated price
-      imageUrl: '/images/products/chicken_tikka.jpg',
+      imageUrl: '/images/products/chicken_tikka.png',
       tags: ['extras', 'chicken', 'tikka', 'grilled'],
       category: { _id: 'cat_extras', title: 'Extras' }
     },
@@ -165,7 +165,7 @@ const products = [
       title: 'Extra Beef Boti',
       description: 'Additional tender beef boti pieces',
       price: 60, // Estimated price
-      imageUrl: '/images/products/beef_boti.jpg',
+      imageUrl: '/images/products/beef_boti.png',
       tags: ['extras', 'beef', 'boti'],
       category: { _id: 'cat_extras', title: 'Extras' }
     },
@@ -176,7 +176,7 @@ const products = [
       title: 'Raita',
       description: 'Yogurt-based side dish with mild spices',
       price: 40,
-      imageUrl: '/images/products/raita.jpg',
+      imageUrl: '/images/products/raita.png',
       tags: ['side', 'yogurt', 'raita'],
       category: { _id: 'cat_sides', title: 'Sides' }
     },
@@ -185,7 +185,7 @@ const products = [
       title: 'Salad',
       description: 'Fresh vegetable salad',
       price: 50,
-      imageUrl: '/images/products/salad.jpg',
+      imageUrl: '/images/products/salad.png',
       tags: ['side', 'fresh', 'vegetables', 'salad'],
       category: { _id: 'cat_sides', title: 'Sides' }
     },
@@ -196,7 +196,7 @@ const products = [
       title: 'Cold Drink',
       description: 'Refreshing soft drink',
       price: 40, // Estimated price
-      imageUrl: '/images/products/cold_drink.jpg',
+      imageUrl: '/images/products/cold_drink.png',
       tags: ['beverage', 'soft drink', 'cold'],
       category: { _id: 'cat_drinks', title: 'Cold Drinks' }
     },
@@ -205,7 +205,7 @@ const products = [
       title: 'Mineral Water',
       description: 'Bottled mineral water',
       price: 30, // Estimated price
-      imageUrl: '/images/products/mineral_water.jpg',
+      imageUrl: '/images/products/mineral_water.png',
       tags: ['beverage', 'water', 'mineral'],
       category: { _id: 'cat_drinks', title: 'Cold Drinks' }
     },
@@ -216,7 +216,7 @@ const products = [
       title: 'Family Deal',
       description: '1kg Biryani, 4 Cold Drinks, Raita and Salad',
       price: 800, // Estimated price
-      imageUrl: '/images/products/family_deal.jpg',
+      imageUrl: '/images/products/family_deal.png',
       tags: ['deal', 'family', 'combo', 'value'],
       category: { _id: 'cat_deals', title: 'Deals' }
     },
@@ -225,7 +225,7 @@ const products = [
       title: 'Couple Deal',
       description: 'Half kg Biryani, 2 Cold Drinks, Raita and Salad',
       price: 450, // Estimated price
-      imageUrl: '/images/products/couple_deal.jpg',
+      imageUrl: '/images/products/couple_deal.png',
       tags: ['deal', 'couple', 'combo', 'value'],
       category: { _id: 'cat_deals', title: 'Deals' }
     }
