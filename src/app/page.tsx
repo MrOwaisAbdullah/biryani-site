@@ -14,18 +14,24 @@ const Home = () => {
       <Hero />
       <main className="min-h-screen mx-auto bg-gradient-to-b from-gray-100 to-background py-16">
       <PopularItems />
-      <Headings image="/1.png" alt="Banner Image 1" />
-      <MenuItems />
+
       <Headings image="/2.png" alt="Banner Image 2" />
-      <MenuItems />
+      <MenuItems categoryTitle="Pulao"/>
+
+      <Headings image="/1.png" alt="Banner Image 1" />
+      <MenuItems categoryTitle="Tikka Biryani"/>
+
       <Headings image="/3.png" alt="Banner Image 3" />
-      <MenuItems /> 
+      <MenuItems categoryTitle="Cold Drinks"/>
+
       <Headings image="/4.png" alt="Banner Image 4" />
-      <MenuItems />
+      <MenuItems categoryTitle="Extras"/>
+
       <Headings image="/6.png" alt="Banner Image 5" />
-      <MenuItems />
+      <MenuItems categoryTitle="Sides"/>
+
       <Headings image="/7.png" alt="Banner Image 6"/>
-      <MenuItems />
+      <MenuItems categoryTitle="Desserts"/>
       </main>
       <Footer />
     </>

@@ -4,7 +4,7 @@ import Image from "next/image";
 import React, { useMemo, useState } from "react";
 import logo from "../../../public/logo.png";
 import Link from "next/link";
-import { CircleX, Phone, ShoppingCart } from "lucide-react";
+import { CircleX, MapPin, Phone, ShoppingCart } from "lucide-react";
 import { useCart } from "@/context/CartContext";
 import { Drawer, DrawerClose, DrawerContent, DrawerTitle } from "../ui/drawer";
 
@@ -31,12 +31,24 @@ const Header = () => {
       style={{ zIndex: 1 }}
       className="relative flex bg-background bg-gradient-to-t from-gray-100 to-background border-b-2 border-border px-5 md:px-12 justify-between items-center p-4 z-999"
     >
-      <Link className="hidden md:flex" href={"tel:+9231456789"}>
-        <button className="flex gap-2 items-center justify-center bg-primary hover:bg-secondary hover:text-primary text-sm font-medium text-background p-2 rounded-lg">
-          <Phone size={15} />
-          +9231456789
+      <div className="flex gap-2 items-center">
+      <Link className="hidden md:flex" href={"tel:+923371298510"}>
+        <button className="flex gap-2 items-center bg-primary hover:bg-secondary hover:text-primary text-sm font-medium text-background p-1 px-2 rounded-lg">
+        <MapPin size={15}/>
+        <div className="flex text-xs font-medium flex-col text-left">
+        Location
+        <p className="-mt-1 text-[10px]">Manzoor Colony, Karachi</p>
+        </div>
         </button>
       </Link>
+
+      <Link className="hidden md:flex" href={"tel:+923371298510"}>
+        <button className="flex gap-2 items-center justify-center bg-primary hover:bg-secondary hover:text-primary text-sm font-medium text-background p-2 rounded-lg">
+        <Phone size={15} fill="#ffffff"/>
+        +923371298510
+        </button>
+      </Link>
+      </div>
 
       <Link href={"/"}>
         <Image
@@ -46,10 +58,10 @@ const Header = () => {
         />
       </Link>
       <div className="flex gap-2 items-center justify-center">
-        <Link className="md:hidden flex" href={"tel:+9231456789"}>
+        <Link className="md:hidden flex" href={"tel:+923371298510"}>
           <button className="flex gap-2 items-center justify-center bg-primary hover:bg-secondary hover:text-primary text-sm font-medium text-background p-2 rounded-lg">
-            <Phone size={15} />
-            +9231456789
+            <Phone size={15} fill="#ffffff"/>
+            +923371298510
           </button>
         </Link>
 

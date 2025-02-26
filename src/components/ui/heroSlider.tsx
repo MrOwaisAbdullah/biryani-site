@@ -2,6 +2,7 @@
 
 import { useEffect, useState, useCallback } from "react"
 import { ChevronLeft, ChevronRight } from "lucide-react"
+import Image from "next/image"
 
 interface Slide {
   image: string
@@ -104,7 +105,7 @@ export default function HeroSlider() {
           {extendedSlides.map((slide, index) => (
             <div key={index} className="h-full w-full flex-shrink-0 flex-grow-0" style={{ flexBasis: "100%" }}>
               <div className="relative h-full w-full">
-                <img src={slide.image || "/placeholder.svg"} alt={slide.title} className="h-full w-full object-cover" />
+                <Image src={slide.image || "/placeholder.svg"} alt={slide.title} className="h-full w-full object-cover" width={1000} height={600} priority />
                 <div className="absolute inset-0 bg-black/40">
                   <div className="container mx-auto flex h-full items-center justify-center px-4">
                     <div

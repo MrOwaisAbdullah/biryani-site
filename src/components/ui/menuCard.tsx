@@ -68,7 +68,7 @@ export function MenuCard({ item }: MenuCardProps) {
             <>
               <h3 className="text-lg font-semibold text-gray-900">{item.title}</h3>
               <span className="text-sm font-bold text-primary whitespace-nowrap ml-2 bg-primary/5 px-2 py-1 rounded-full">
-                ${item.price.toFixed(2)}
+              Rs. {item.price.toFixed(2)}
               </span>
             </>
           )}
