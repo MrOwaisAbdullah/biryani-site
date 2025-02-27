@@ -153,7 +153,7 @@ export default function CartContent() {
         </div>
 
         <p className="text-center text-sm text-muted-foreground">
-          Free delivery on orders above Rs. 1000
+          We Only Deliver in Limited Areas<br/>Please Order through Foodpanda for Delivery in Your Area
         </p>
       </div>
     </div>
