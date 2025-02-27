@@ -12,6 +12,7 @@ const Home = () => {
     <>
       <Header />
       <Hero />
+      
       <main className="min-h-screen mx-auto bg-gradient-to-b from-gray-100 to-background py-16">
       <PopularItems />
 

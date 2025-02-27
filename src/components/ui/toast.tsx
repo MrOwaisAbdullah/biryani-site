@@ -56,7 +56,7 @@ function ToastContainer() {
   const { toasts, removeToast } = useToast()
 
   return (
-    <div className="fixed bottom-0 left-1/2 z-50 -translate-x-1/2 p-4 space-y-4">
+    <div className="z-9999 fixed bottom-0 left-1/2 z-50 -translate-x-1/2 p-4 space-y-4">
       {toasts.map((toast) => (
         <Toast key={toast.id} toast={toast} onRemove={removeToast} />
       ))}

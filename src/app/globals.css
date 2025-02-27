@@ -2,6 +2,72 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Apply to all browsers that support it (including Chrome) */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #f48d2b transparent; /* Keep your colors */
+}
+
+/* Modern scrollbar with rounded corners */
+::-webkit-scrollbar {
+  width: 6px; /* Slightly wider to accommodate rounding */
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent; /* Make track transparent */
+  margin: 4px 0; /* Add some margin to show rounding */
+}
+
+::-webkit-scrollbar-thumb {
+  background: #f48d2b;
+  border-radius: 8px; /* Use pixels instead of vh */
+  border: 1px solid transparent; /* Add transparent border */
+  background-clip: padding-box; /* This helps with rounding */
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #d67616;
+}
+
+/* Optional: Round the corners of the scrollbar itself */
+::-webkit-scrollbar-corner {
+  background: transparent;
+}
+
+/* Firefox */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #f48d2b transparent;
+}
+
+/* Dark mode */
+.dark ::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.dark ::-webkit-scrollbar-thumb {
+  background: #f48d2b;
+}
+
+.dark ::-webkit-scrollbar-thumb:hover {
+  background: #d67616;
+}
+
+.dark * {
+  scrollbar-color: #f48d2b #1a1a1a;
+}
+
+/* Hide scrollbar option */
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
 @layer base {
   :root {
     --radius: 0.5rem;
@@ -44,6 +110,16 @@
   .fade-out {
     --exit-opacity: 0;
   }
+
+  /* Chrome, Safari and Opera */
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+
+  .no-scrollbar {
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+  }
 }
 
 @keyframes animate-in {
@@ -67,4 +143,3 @@
     transform: translateY(var(--exit-translate-y, 0));
   }
 }
-

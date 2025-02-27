@@ -11,6 +11,7 @@
     "cleanup": "node scripts/cleanup.mjs"
   },
   "dependencies": {
+    "@radix-ui/react-scroll-area": "^1.2.3",
     "@sanity/image-url": "^1.1.0",
     "@sanity/vision": "^3.77.2",
     "class-variance-authority": "^0.7.1",
