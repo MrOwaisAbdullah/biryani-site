@@ -52,7 +52,7 @@ export default function ProductCard({ item }: ProductCardProps) {
       )}
 
       {/* Title with skeleton */}
-      <div className="absolute left-0 top-0 z-10 p-4">
+      <div className="absolute left-0 top-0 z-0 p-4">
         {isLoading ? (
           <div className="h-6 w-32 animate-pulse rounded bg-gray-200 dark:bg-gray-800" />
         ) : (
@@ -63,7 +63,7 @@ export default function ProductCard({ item }: ProductCardProps) {
       </div>
 
       {/* Price with skeleton */}
-      <div className="absolute bottom-0 right-0 z-10 p-4">
+      <div className="absolute bottom-0 right-0 z-0 p-4">
         {isLoading ? (
           <div className="h-8 w-24 animate-pulse rounded-full bg-gray-200 dark:bg-gray-800" />
         ) : (

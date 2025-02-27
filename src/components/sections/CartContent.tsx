@@ -55,7 +55,7 @@ export default function CartContent() {
   }
 
   return (
-    <div className="flex h-[calc(100vh-6rem)] max-w-[450px] m-auto flex-col ">
+    <div className="flex h-[calc(100vh-6rem)] max-w-[100vw] xs:max-w-[80vw] md:max-w-[45vw] lg:max-w-[35vw] 2xl:max-w-[550px] m-auto flex-col ">
         <div className="px-4">
           {/* Cart Items Section */}
             <div className="space-y-3">
@@ -106,11 +106,9 @@ export default function CartContent() {
               ))}
             </div>
 
-          {/* <div className="h-px  w-full flex justify-center items-center bg-black/30 my-5"></div> */}
-
           {/* Popular Items Section */}
-          <div className="border-t bg-background/80 backdrop-blur-sm mt-8">
-            <h3 className="font-semibold text-md sticky top-0 bg-background pt-2">Popular with your order</h3>
+          <div className="border-t backdrop-blur-sm mt-8">
+            <h3 className="font-semibold text-md sticky top-0 pt-2">Popular with your order</h3>
             <p className="pb-2 text-xs">Customers often buy these together</p>
             <div className="relative">
               <PopularWithOrder />
@@ -119,7 +117,7 @@ export default function CartContent() {
         </div>
 
       {/* Order Summary */}
-      <div className="border-t bg-background/80 backdrop-blur-sm p-4 space-y-4 mt-auto">
+      <div className="border-t backdrop-blur-sm p-4 space-y-4 mt-auto">
         <div className="space-y-2">
           <div className="flex justify-between text-sm">
             <span className="text-muted-foreground">Subtotal</span>
@@ -138,22 +136,22 @@ export default function CartContent() {
         <div className="grid gap-2">
           <button
             onClick={handleWhatsAppOrder}
-            className="relative flex items-center justify-center gap-5 w-full overflow-hidden rounded-xl bg-[#25D366] p-3 font-medium text-white transition-all after:absolute after:inset-0 after:bg-gradient-to-r after:from-white/0 after:to-white/10 hover:shadow-lg hover:shadow-[#25D366]/20 active:scale-[0.98]"
+            className="relative flex items-center md:justify-center gap-5 w-full overflow-hidden rounded-xl bg-[#25D366] p-3 font-medium text-white transition-all after:absolute after:inset-0 after:bg-gradient-to-r after:from-white/0 after:to-white/10 hover:shadow-lg hover:shadow-[#25D366]/20 active:scale-[0.98]"
           >
-            <Image className="absolute left-16 p-1" src={"/whatsapp.png"} alt="Order on WhatsApp" width={50} height={50}/>
-            Order on WhatsApp
+            <Image className="absolute left-5 md:left-8 lg:left-16 p-1" src={"/whatsapp.png"} alt="Order on WhatsApp" width={50} height={50}/>
+            <span className="pl-28 sm:pl-32 md:pl-0">Order on WhatsApp</span>
           </button>
           <button
             onClick={() => window.open("https://www.foodpanda.pk", "_blank")}
-            className="relative flex items-center justify-center gap-5 w-full overflow-hidden rounded-xl bg-[#D60265] p-3 font-medium text-white transition-all after:absolute after:inset-0 after:bg-gradient-to-r after:from-white/0 after:to-white/10 hover:shadow-lg hover:shadow-[#D6156E]/20 active:scale-[0.98]"
+            className="relative flex items-center md:justify-center gap-5 w-full overflow-hidden rounded-xl bg-[#D60265] p-3 font-medium text-white transition-all after:absolute after:inset-0 after:bg-gradient-to-r after:from-white/0 after:to-white/10 hover:shadow-lg hover:shadow-[#D6156E]/20 active:scale-[0.98]"
           >
-            Order through Foodpanda
-            <Image className="absolute right-6 w-20 object-cover rotate-12" src={"/foodpanda.png"} alt="Order through FoodPanda" width={50} height={50}/>
+            <Image className="absolute right-6 w-20 object-cover rotate-12 z-0" src={"/foodpanda.png"} alt="Order through FoodPanda" width={50} height={50}/>
+            <span className="z-10 pl-10 md:pl-0">Order on Foodpanda</span>
           </button>
         </div>
 
         <p className="text-center text-sm text-muted-foreground">
-          We Only Deliver in Limited Areas<br/>Please Order through Foodpanda for Delivery in Your Area
+          We Only Deliver in Limited Areas<br/>Please Order through Foodpanda for Delivery in Your Area<br/><strong><i>Images are only for refference!!!</i></strong><br/>Thank You!
         </p>
       </div>
     </div>

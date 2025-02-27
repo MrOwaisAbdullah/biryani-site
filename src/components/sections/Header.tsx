@@ -1,10 +1,16 @@
+"use client";
+
 import Image from "next/image";
 import logo from "../../../public/logo.png";
 import Link from "next/link";
 import { MapPin, Phone } from "lucide-react";
 import CartDrawer from "./CartDrawer";
+import { useMemo } from "react";
+import { useCart } from "@/context/CartContext";
 
 const Header = () => {
+  const { state } = useCart(); 
+  const { cart } = state;
 
   return (
     <header
@@ -47,6 +53,8 @@ const Header = () => {
 
         <CartDrawer />
       </div>
+
+
     </header>
   );
 };
