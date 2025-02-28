@@ -6,25 +6,29 @@ import Image from "next/image"
 
 interface Slide {
   image: string
+  mobileImage?: string
   title: string
-  description: string
+  description?: string
 }
 
 const slides: Slide[] = [
     {
-      image: "/image3.webp",
+      image: "/banner1.png",
+      mobileImage: "/mob-banner1.png",
       title: "Hyderabadi Yakhni Pulao!",
-      description: "Authentic Hyderabadi Yakhni Pulao, cooked with traditional spices and rich flavors, just like you love it!",
+      // description: "Authentic Hyderabadi Yakhni Pulao, cooked with traditional spices and rich flavors, just like you love it!",
     },
     {
-      image: "/image.jpg",
+      image: "/banner2.png",
+      mobileImage: "/mob-banner2.png",
       title: "Tikka Biryani: Masalay Daar, Mazedar!",
-      description: "Savor the perfect blend of tikka and biryani. Each bite is packed with smoky tikka flavor and aromatic rice.",
+      // description: "Savor the perfect blend of tikka and biryani. Each bite is packed with smoky tikka flavor and aromatic rice.",
     },
     {
-      image: "/image2.png",
+      image: "/banner3.png",
+      mobileImage: "/mob-banner3.png",
       title: "Dawat-e-Biryani at AL Rehman!",
-      description: "Your ultimate destination for the most flavorful Hyderabadi Pulao, and Chicken Tikka Biryani in town.\n Order now and enjoy!",
+      // description: "Your ultimate destination for the most flavorful Hyderabadi Pulao, and Chicken Tikka Biryani in town.\n Order now and enjoy!",
     },
   ]
 
@@ -105,8 +109,9 @@ export default function HeroSlider() {
           {extendedSlides.map((slide, index) => (
             <div key={index} className="h-full w-full flex-shrink-0 flex-grow-0" style={{ flexBasis: "100%" }}>
               <div className="relative h-full w-full">
-                <Image src={slide.image || "/placeholder.svg"} alt={slide.title} className="h-full w-full object-cover" width={1000} height={600} priority />
-                <div className="absolute inset-0 bg-black/40">
+                <Image src={slide.mobileImage || "/placeholder.svg"} alt={slide.title} className="h-full w-full object-cover sm:hidden" width={1000} height={600} priority />
+                <Image src={slide.image || "/placeholder.svg"} alt={slide.title} className="h-full w-full object-cover hidden sm:block" width={1000} height={600} priority />
+                <div className="absolute inset-0">
                   <div className="container mx-auto flex h-full items-center justify-center px-4">
                     <div
                       className="text-center text-white"
@@ -116,8 +121,8 @@ export default function HeroSlider() {
                         transition: "opacity 500ms ease-out, transform 500ms ease-out",
                       }}
                     >
-                      <h2 className="mb-4 text-3xl font-bold sm:text-4xl md:text-5xl lg:text-6xl">{slide.title}</h2>
-                      <p className="text-lg max-w-5xl sm:text-xl md:text-2xl">{slide.description}</p>
+                      {/* <h2 className="mb-4 text-3xl font-bold sm:text-4xl md:text-5xl lg:text-6xl">{slide.title}</h2>
+                      <p className="text-lg max-w-5xl sm:text-xl md:text-2xl">{slide.description}</p> */}
                     </div>
                   </div>
                 </div>
@@ -131,7 +136,7 @@ export default function HeroSlider() {
       <button
         onClick={previousSlide}
         disabled={isAnimating}
-        className="absolute left-4 top-1/2 -translate-y-1/2 transform rounded-full bg-white/30 p-2 text-white backdrop-blur-sm transition-all hover:bg-white/50 disabled:opacity-50 disabled:cursor-not-allowed"
+        className="absolute left-4 top-1/2 -translate-y-1/2 transform rounded-full bg-white/10 p-2 text-white transition-all hover:bg-white/50 disabled:opacity-50 disabled:cursor-not-allowed"
         style={{ zIndex: 20 }}
       >
         <ChevronLeft className="h-6 w-6 sm:h-8 sm:w-8" />
@@ -139,7 +144,7 @@ export default function HeroSlider() {
       <button
         onClick={nextSlide}
         disabled={isAnimating}
-        className="absolute right-4 top-1/2 -translate-y-1/2 transform rounded-full bg-white/30 p-2 text-white backdrop-blur-sm transition-all hover:bg-white/50 disabled:opacity-50 disabled:cursor-not-allowed"
+        className="absolute right-4 top-1/2 -translate-y-1/2 transform rounded-full bg-white/30 p-2 text-white transition-all hover:bg-white/50 disabled:opacity-50 disabled:cursor-not-allowed"
         style={{ zIndex: 20 }}
       >
         <ChevronRight className="h-6 w-6 sm:h-8 sm:w-8" />
