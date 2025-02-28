@@ -136,7 +136,7 @@ export default function HeroSlider() {
       <button
         onClick={previousSlide}
         disabled={isAnimating}
-        className="absolute left-4 top-1/2 -translate-y-1/2 transform rounded-full bg-white/10 p-2 text-white transition-all hover:bg-white/50 disabled:opacity-50 disabled:cursor-not-allowed"
+        className="absolute left-4 top-1/2 -translate-y-1/2 transform rounded-full bg-white/30 p-2 text-white transition-all hover:bg-white/50 disabled:opacity-50 disabled:cursor-not-allowed"
         style={{ zIndex: 20 }}
       >
         <ChevronLeft className="h-6 w-6 sm:h-8 sm:w-8" />
