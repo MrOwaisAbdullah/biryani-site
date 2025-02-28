@@ -5,7 +5,6 @@ import { CircleX, ShoppingCart } from "lucide-react";
 import CartContent from "./CartContent";
 import { useCart } from "@/context/CartContext";
 import { useEffect, useMemo, useState } from "react";
-import { ScrollArea } from "../ui/scrollArea";
 
 const CartDrawer = () => {
   const { state } = useCart(); // Access the cart state from context
