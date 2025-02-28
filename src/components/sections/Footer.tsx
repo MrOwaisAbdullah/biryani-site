@@ -7,7 +7,7 @@ const Footer = () => {
         &copy; 2025 AL-Rehman Pulao & Biryani Center. All rights reserved.
       </p>
       <p>
-        Made with ❤️ by <a href="https://www.linkedin.com/in/mrowaisabdullah/" className='text-primary font-medium'>Owais Abdullah</a>
+        Made with ❤️ by <a href="https://www.linkedin.com/in/mrowaisabdullah/" target='_blank' className='text-primary font-medium'>Owais Abdullah</a>
       </p>
     </div>
   )
