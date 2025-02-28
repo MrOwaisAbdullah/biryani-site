@@ -35,7 +35,7 @@ export default function CartContent() {
 
   if (cart.length === 0) {
     return (
-      <div className="flex h-[50vh] flex-col items-center justify-center gap-6 px-4 text-center">
+      <div className="flex h-full flex-col items-center justify-center gap-6 px-4 text-center py-12">
         <div className="rounded-full bg-primary/10 p-6">
           <svg className="h-12 w-12 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path
@@ -55,8 +55,8 @@ export default function CartContent() {
   }
 
   return (
-    <div className="flex h-[calc(100vh-6rem)] max-w-[100vw] xs:max-w-[80vw] md:max-w-[45vw] lg:max-w-[35vw] 2xl:max-w-[550px] m-auto flex-col ">
-        <div className="px-4">
+    <div className="flex flex-col h-full overflow-y-auto">
+        <div className="px-4 pb-4 flex-grow">
           {/* Cart Items Section */}
             <div className="space-y-3">
               {cart.map((item) => (

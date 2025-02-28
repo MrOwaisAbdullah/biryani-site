@@ -34,10 +34,34 @@ const CartDrawer = () => {
   const toggleDrawer = () => setIsOpen((prev) => !prev);
   // Function to explicitly close the drawer
   const closeDrawer = () => setIsOpen(false);
+
+    // State to track if the device is mobile
+    const [isMobile, setIsMobile] = useState(false);
+
+    useEffect(() => {
+      setIsMounted(true);
+      
+      // Function to check if device is mobile based on window width
+      const checkIfMobile = () => {
+        setIsMobile(window.innerWidth < 480);
+      };
+      
+      // Set initial state
+      checkIfMobile();
+      
+      // Add event listener for window resize
+      window.addEventListener('resize', checkIfMobile);
+      
+      // Cleanup
+      return () => {
+        window.removeEventListener('resize', checkIfMobile);
+      };
+    }, []);
+    
   return (
     <>
       {isMounted ? (
-        <Drawer direction="right" open={isOpen} onOpenChange={setIsOpen}>
+        <Drawer direction={isMobile ? "bottom" : "right"} open={isOpen} onOpenChange={setIsOpen}>
           {/* Button to Toggle Drawer */}
           <button
             onClick={toggleDrawer}
@@ -50,10 +74,10 @@ const CartDrawer = () => {
               </div>
             )}
           </button>
-          <DrawerContent className="text-left overflow-x-hidden xs:max-w-[80%] md:max-w-[45%] lg:max-w-[35%]">
+          <DrawerContent className="text-left overflow-hidden sm:max-w-[80%] md:max-w-[45%] lg:max-w-[35%]">
             {/* Close Button */}
             <DrawerClose
-              className="text-accent absolute top-1 right-3 m-5 text-xl"
+              className="text-accent absolute top-6 sm:top-1 right-3 m-5 text-xl"
               onClick={closeDrawer}
             >
               <CircleX />
@@ -61,7 +85,7 @@ const CartDrawer = () => {
             <DrawerTitle className="text-xl px-4 my-5">Your Cart</DrawerTitle>
 
             {/* Content Here*/}
-            <CartContent />
+              <CartContent />
           </DrawerContent>
         </Drawer>
       ) : (
