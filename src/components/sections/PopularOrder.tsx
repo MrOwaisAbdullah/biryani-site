@@ -9,7 +9,7 @@ import { useToast } from "../ui/toast"
 const popularItems = [
   // BIRYANI CATEGORY
   {
-    _id: 'product_tikka_biryani_1kg',
+    _id: '2axI5gVoS4Ac0D04GqDk8V',
     title: 'Tikka Biryani 1 Kg',
     description: 'Delicious tikka biryani, 1kg serving',
     price: 560,
@@ -18,7 +18,7 @@ const popularItems = [
   },
 
   {
-    _id: 'product_tikka_biryani_sada_1kg',
+    _id: '7ZYoFXxWQ3MIUIVrDMUpVv',
     title: 'Tikka Biryani Sada 1 Kg',
     description: 'Simple tikka biryani without extra spices, 1kg serving',
     price: 400,
@@ -27,7 +27,7 @@ const popularItems = [
   
   // PULAO CATEGORY
   {
-    _id: 'product_beef_pulao_1kg',
+    _id: '2axI5gVoS4Ac0D04GqDlB0',
     title: 'Beef Pulao 1 Kg',
     description: 'Flavorful beef pulao, 1kg serving',
     price: 620,
@@ -35,7 +35,7 @@ const popularItems = [
 
   },
   {
-    _id: 'product_sada_pulao_1kg',
+    _id: '7ZYoFXxWQ3MIUIVrDMUq37',
     title: 'Sada Pulao 1 Kg',
     description: 'Simple plain rice pulao, 1kg serving',
     price: 400,
@@ -44,7 +44,7 @@ const popularItems = [
   
   // EXTRAS CATEGORY
   {
-    _id: 'product_badami_kheer',
+    _id: '2axI5gVoS4Ac0D04GqDnvc',
     title: 'Badami Kheer',
     description: 'Sweet almond rice pudding',
     price: 120,
@@ -52,7 +52,7 @@ const popularItems = [
 
   },
   {
-    _id: 'product_extra_fried_onion',
+    _id: 'TZh06If8UWMtw7RfxYfUAp',
     title: 'Extra Fried Onion',
     description: 'Crispy fried onions to top your biryani or pulao',
     price: 30,
@@ -60,7 +60,7 @@ const popularItems = [
 
   },
   {
-    _id: 'product_extra_chicken_tikka',
+    _id: 'TZh06If8UWMtw7RfxYfUiM',
     title: 'Extra Chicken Tikka Piece',
     description: 'Additional marinated and grilled chicken tikka piece',
     price: 50, // Estimated price
@@ -68,7 +68,7 @@ const popularItems = [
 
   },
   {
-    _id: 'product_extra_beef_boti',
+    _id: '2axI5gVoS4Ac0D04GqDp6R',
     title: 'Extra Beef Boti',
     description: 'Additional tender beef boti pieces',
     price: 60, // Estimated price
@@ -78,7 +78,7 @@ const popularItems = [
   
   // SIDES CATEGORY
   {
-    _id: 'product_raita',
+    _id: 'TZh06If8UWMtw7RfxYfVIw',
     title: 'Raita',
     description: 'Yogurt-based side dish with mild spices',
     price: 40,
@@ -86,7 +86,7 @@ const popularItems = [
 
   },
   {
-    _id: 'product_salad',
+    _id: 'TZh06If8UWMtw7RfxYfW5i',
     title: 'Salad',
     description: 'Fresh vegetable salad',
     price: 50,
@@ -95,14 +95,14 @@ const popularItems = [
   
   // DRINKS CATEGORY
   {
-    _id: 'product_cold_drink',
+    _id: 'fW6dnvgAv0MK9oY0nud5eH',
     title: 'Cold Drink',
     description: 'Refreshing soft drink',
     price: 40, // Estimated price
     image: '/images/products/cold_drink.png',
   },
   {
-    _id: 'product_mineral_water',
+    _id: 'crAVAYEOUy2k7pk2sRgNAX',
     title: 'Mineral Water',
     description: 'Bottled mineral water',
     price: 30, // Estimated price
