@@ -30,7 +30,7 @@ const popularItems = [
     _id: '2axI5gVoS4Ac0D04GqDlB0',
     title: 'Beef Pulao 1 Kg',
     description: 'Flavorful beef pulao, 1kg serving',
-    price: 620,
+    price: 640,
     image: '/images/products/beef_pulao1.png',
 
   },
